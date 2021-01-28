@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <report 
+        id="formato_contract_print_confi"
+        model="hr.contract"
+        string="Confidencialidad Empleado"
+        name="contrato_generacion_guip2020.facturas_print_view_document_confi"
+        report_type="qweb-pdf"
+        />
+        
+
+</odoo>
+

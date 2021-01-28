@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="facturas_print_view_document_confi">
+    <t t-call="web.html_container">
+        
+            <t t-call="web.external_layout">
+                <t t-foreach="docs" t-as="o">
+                    <div class="page">
+                        <!--
+                        <img src='/web/binary/company_logo' class="float-right" style="width:200px; height:90px;" alt="Logo"/>
+                        -->
+
+                        <h2 style="text-align: center;">
+                            <span>CONVENIO DE CONFIDENCIALIDAD</span>
+                        </h2>
+                        <br/>     
+
+                        <!--PARRAFO COMPLETO-->                    
+                        <p style="text-align: justify;" >
+                            Entre los suscritos el Ingeniero José Manuel Caceres Sandoval , mayor de edad y domicilio en la ciudad de 
+                            Tegucigalpa, identificado(a) 
+                            como aparece al pie de su respectiva firma; y por la otra, <span t-field="o.employee_id.name"/>, también mayor de edad y 
+                            domicilio en la ciudad de <span t-field="o.text_ciudad"/>, identificado(a) como aparece al pie de su firma, 
+                            quien actúa en nombre de Servicios Digitales GUIP S.A,  se ha acordado celebrar el presente Acuerdo de Confidencialidad, 
+                            señalando que para efectos del presente convenio “Información Confidencial” 
+                            comprende toda la información divulgada por cualquiera de las partes ya sea en forma oral, visual, escrita, 
+                            grabada en medios magnéticos o en cualquier otra forma tangible y que se encuentre claramente marcada como tal al ser entregada a la parte receptora. 
+                            Tras las anteriores consideraciones, entre el empleador y el trabajador, identificados como aparece al pie de sus firmas, 
+                            se ha celebrado este convenio de confidencialidad, regido además por las siguientes cláusulas:
+                        </p>  
+
+                        <br/>    
+                        <h2 style="text-align: center;">
+                            <span>TÉRMINOS DEL CONTRATO</span>
+                        </h2>
+                        <br/>     
+
+                        
+                        <p style="text-align: justify;">
+                            1. PRIMERA CLÁUSULA.  El objeto del presente acuerdo es fijar los términos y condiciones bajo los cuales las partes mantendrán la confidencialidad de los datos e información intercambiados entre ellas, incluyendo información objeto de derecho de autor, patentes, técnicas, modelos, invenciones, know-how, procesos, algoritmos, programas, ejecutables, investigaciones, detalles de diseño, información financiera, lista de clientes, inversionistas, empleados, relaciones de negocios y contractuales, pronósticos de negocios, planes de mercadeo y cualquier información revelada sobre terceras personas. 
+                        </p>
+                        
+
+                        <p style="text-align: justify;">
+                                SEGUNDA CLÁUSULA.  Las partes acuerdan que cualquier información intercambiada, facilitada o creada entre ellas en el transcurso de la vigencia de este contrato, será mantenida en estricta confidencialidad. La parte receptora correspondiente sólo podrá revelar información confidencial a quienes la necesiten y estén autorizados previamente por la parte de cuya información confidencial se trata. Se considera también información confidencial: a) Aquella que como conjunto o por la configuración o estructuración exacta de sus componentes, no sea generalmente conocida entre los expertos en los campos correspondientes. b) La que no sea de fácil acceso, y c) Aquella información que no esté sujeta a medidas de protección razonables, de acuerdo con las circunstancias del caso, a fin de mantener su carácter confidencial. 
+                        </p>
+                        
+
+                        <p style="text-align: justify;">
+                           TERCERA CLÁUSULA. La parte receptora se obliga a no divulgar la “Información Confidencial” a terceros, sin el previo consentimiento por escrito de la parte divulgante. 
+
+                        </p>
+                        
+                        <p style="text-align: justify;">
+                            CUARTA CLÁUSULA. La parte receptora se obliga a tomar las precauciones necesarias y apropiadas para mantener como confidencial la “Información Confidencial” propiedad de la otra parte, incluyendo, mas no limitando, el informar a sus empleados que la manejen, que dicha información es confidencial y que no deberá ser divulgada a terceras partes.
+                        </p>
+                        <br/>
+                        <br/>
+                        <br/>
+                        
+                        <p style="text-align: justify;">
+                           QUINTA CLÁUSULA La parte receptora está de acuerdo en que la “Información Confidencial” que reciba de la otra parte es y seguirá siendo propiedad de ésta última, a usar dicha información únicamente de la manera y para los propósitos autorizados en la Cláusula Sexta de este convenio y que este instrumento no otorga, de manera expresa o implícita, derecho intelectual o de propiedad alguno, incluyendo, mas no limitando, Licencias de uso respecto de la “Información Confidencial”.
+                        </p>
+
+                        <p style="text-align: justify;">
+                            SEXTA CLÁUSULA. Las partes convienen que en caso que la parte receptora incumpla parcial o totalmente con las obligaciones a su cargo derivadas del presente contrato, la parte receptora será responsable de los daños y perjuicios que dicho incumplimiento llegase a ocasionar a la parte divulgante. 
+                        </p>
+                        <br/>   
+                        <p style="text-align: justify;">
+                            SÉPTIMA CLÁUSULA La vigencia del presente convenio será indefinida y permanecerá vigente mientras exista relación laboral entre ambas partes.
+                        </p>
+
+                        <p style="text-align: justify;">
+                            OCTAVA CLÁUSULA Las obligaciones establecidas en este convenio para la parte receptora, respecto a la confidencialidad, de la “Información Confidencial” y al uso de la misma, prevalecerán a la terminación de este instrumento, por un periodo de por lo menos 2 (dos) años a partir de dicha terminación.
+                        </p>
+
+                        <p style="text-align: justify;">
+                            NOVENO CLÁUSULA. Ninguna de las partes podrá ceder sus derechos y obligaciones derivados del presente convenio.
+                        </p>
+
+                        <p style="text-align: justify;">
+                            DECIMA CLÁUSULA. Para la interpretación y cumplimiento del presente convenio, las partes se someten a la jurisdicción de las leyes y tribunales de Honduras, renunciando desde ahora a cualquier otro fuero que pudiera corresponderles por razón de sus domicilios presentes o futuros o por cualquier otra causa. 
+                        </p>
+
+                        <p style="text-align: justify;">
+                           Para constancia, y en señal de aceptación, se firma el presente acuerdo en ejemplares, por las partes que en él han intervenido, en la ciudad de Tegucigalpa 
+                           <span t-field="o.date_start"/>.
+                        </p>
+
+                       <br/>
+                       <br/>
+                       <br/>
+                       <br/>
+                      
+
+                        <table class="text-center w3-table w3-striped w3-bordered">
+                            <tr class="text-center">
+                                <th> <div style="width: 100px;"> </div> </th>
+                                <th style="width: 260px; border-top: 2px solid black;">0801196904133</th>
+                                <th> <div style="width: 100px;"> </div> </th>
+                                <th style="width: 260px; border-top: 2px solid black;"><span t-field="o.employee_id.identification_id"/> </th>
+                            </tr>
+                        </table>
+
+                       
+
+                       
+
+                    </div> <!--ULTIMO DIV PAGE-->
+                </t>
+            </t>       
+     
+    </t>
+</template>
+</odoo>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="facturas_print_view_document">
+    <t t-call="web.html_container">
+        
+            <t t-call="web.external_layout">
+                <t t-foreach="docs" t-as="o">
+                    <div class="page">
+                        <!--
+                        <img src='/web/binary/company_logo' class="float-right" style="width:200px; height:90px;" alt="Logo"/>
+                        -->
+
+                        <h2 style="text-align: center;">
+                            <span>CONTRATO INDIVIDUAL DE TRABAJO</span>
+                        </h2>
+                        <br/>     
+
+                        <!--PARRAFO COMPLETO-->                    
+                        <p style="text-align: justify;" >
+                            Nosotros, José Manuel Caceres Sandoval, Mayor de Edad, Casado, Ing. Eléctrico, de nacionalidad hondureña, con tarjeta de 
+                            identidad 0801-1969-04133, Emitida el 29 de septiembre del 2016 en Tegucigalpa M.D.C. 
+                            en su carácter de Gerente General de la Sociedad Servicios Digitales GÜIP. S.A. que en lo sucesivo llamaremos “GÜIP” y 
+                            <span t-field="o.employee_id.name"/>, 
+                            Mayor de Edad, 
+                            <span t-field="o.employee_id.gender"/>,
+                            <span t-field="o.text_titulo"/>,
+                            de Nacionalidad Hondureña,
+                            con tarjeta de Identidad
+                            <span t-field="o.employee_id.identification_id"/>, 
+                            quien en adelante se llamará El EMPLEADO(A) convenimos en celebrar, 
+                            como en efecto celebramos el presente contrato individual de trabajo, en los términos siguientes:
+                        </p>  
+
+                        <br/>    
+                        <h2 style="text-align: center;">
+                            <span>TERMINOS DEL CONTRATO</span>
+                        </h2>
+                        <br/>     
+
+                        
+                        <p style="text-align: justify;">
+                            1. El EMPLEADO(A), por este acto se obliga a prestar de manera exclusiva a GÜIP, sus servicios personales bajo la dirección y subordinación de aquél, ingresando en el cargo estipulado en el anexo, en las oficinas que GÜIP tiene en TEGUCIGALPA, en el piso 10 del Edificio Corporativo Centro América, en el Boulevard Centro América, sin prejuicio que cuando las necesidades de trabajo así lo determinen, podrá desplazarse en todo el territorio nacional o internacionalmente y, por mutuo acuerdo, podría trasladarse a cualquiera de las oficinas que GÜIP pueda tener en el país u otro territorio.
+                        </p>
+                        
+
+                        <p style="text-align: justify;">
+                        2. La duración del presente contrato es por tiempo indefinido, iniciándose la relación de trabajo a más tardar el 
+                        día  <span t-field="o.date_start"/>, 
+                        pero El EMPLEADO(A) estará sujeta a un período de prueba de sesenta días y que tiene por objeto, por parte de GÜIP apreciar las aptitudes de El EMPLEADO(A) y por parte de ésta la conveniencia de las condiciones de trabajo. Durante este período, cualquiera de las partes puede ponerle término al contrato, sin responsabilidad alguna.
+                        </p>
+                        
+
+                        <p style="text-align: justify;">
+                            3. El tiempo de duración de la jornada de trabajo será de ocho horas diarias y cuarenta y cuatro horas a la semana y el mismo se prestará en el siguiente horario: de lunes a viernes periodo de 8:30 a.m.  a 12.30 y periodo de 1:30 pm a 5:30 p.m. es entendido que el lapso existente entre ambos periodos no será tiempo efectivo de trabajo por lo que el trabajador podrá salir de su centro de trabajo  y los sábados de 8:30 a.m. a 12:30 p.m. en forma presencial o remota, sin perjuicio de lo anterior; el indicado horario podrá ser modificado de acuerdo a las necesidades de la función o determinaciones que adopte el Banco Central de Honduras o la Comisión de Banca y Seguros de conformidad a las necesidades del servicio.
+                        </p>
+                        
+                        <p style="text-align: justify;">
+                            4. El trabajo se remunerará quincenalmente, efectuando dos depósitos en su cuenta bancaria acreditando el salario pactado en el contrato de trabajo individual. 
+                        </p>
+                        
+                        <p style="text-align: justify;">
+                            5. El salario convenido como retribución de los servicios a que se refiere este Contrato será estipulado en el ANEXO firmado por ambas partes 
+                        </p>
+
+                        <p style="text-align: justify;">
+                            6. El pago del salario se hará en moneda de curso legal en las oficinas de la empresa los días quince y treinta de cada mes.  
+                            Para tal efecto, se acreditará electrónicamente el valor de cada quincena en cuenta de cheques o ahorros de cada empleado, 
+                            creada en el banco seleccionado para ese propósito.
+                        </p>
+                        <br/>   
+                        <p style="text-align: justify;">
+                            7. Una vez terminado el periodo de prueba, 
+                            el jefe inmediato deberá confirmar a través de una evaluación por escrito al departamento de Recursos Humanos, 
+                            confirmando la continuación o no de dicho contrato. 
+                            La duración de este Contrato será por tiempo indefinido y entrará en vigor desde el 
+                            <span t-field="o.date_start"/>.
+                        </p>
+
+                        <p style="text-align: justify;">
+                            8. El día normal de descanso para GÜIP será el domingo.
+                        </p>
+
+                        <p style="text-align: justify;">
+                            9. El EMPLEADO(A) tendrá derecho a un período de vacaciones remuneradas de conformidad con el Código del Trabajo y el Reglamento Interno de Trabajo.
+                        </p>
+
+                        <p style="text-align: justify;">
+                            10. El EMPLEADO(A) se someterá a los exámenes médicos que periódicamente ordene la compañía, los que practicará el médico que GÜIP designe y cuyos servicios serán retribuidos por la compañía misma.  
+                        </p>
+
+                        <p style="text-align: justify;">
+                            11. Se hace constar que el trabajador no ha estado al servicio del Grupo Atlántida con anterioridad a este Contrato desde
+                            <span t-field="o.date_start"/>,
+                             fecha en que inició la prestación de sus servicios.
+                        </p>
+
+                        <p style="text-align: justify;">
+                            12. Ambas partes se someten a las disposiciones del presente contrato, del Código de Trabajo y del Reglamento Interno de Trabajo.
+                        </p>
+
+                        <p style="text-align: justify;">
+                            13. El EMPLEADO(A) cuenta con los siguientes seguros:  Seguro de Salud personal y dependientes y Seguro contra Accidentes Personales, los cuales son pagados por la compañía y en caso de muerte cubre conforme lo que estipula la respectiva póliza.
+                        </p>
+
+                        <p style="text-align: justify;">
+                            14.El EMPLEADO(A) tiene acceso y opción a los siguientes Planes de Retiro:  A.- Plan Provisional de la Administración de Fondos Atlántida, S.A. EL EMPLEADO(A) se compromete a apegarse y respetar lo establecido en el Reglamento del y del AFP.
+                        </p>
+                        
+                        <p style="text-align: justify;">
+                            15. El EMPLEADO(A) aportará al Régimen del Seguro de Previsión Social, GÜIP, según lo estipulado por la Ley del Seguro Social. 
+                        </p>
+
+                        <p style="text-align: justify;">
+                            16. El EMPLEADO(A) se compromete al cumplimiento de objetivos y metas definidas, en el puesto de trabajo, 
+                            así como a todas las políticas, procesos y reglamentos aprobados y vigentes por GÚIP. 
+                        </p>
+
+                        <br/>   
+                        <br/>   
+                        <br/>   
+                        <br/>   
+                        <br/>   
+                        <br/>   
+                        <br/>
+                        <br/>
+                        <br/>   
+                        <br/>
+                        <br/>
+                        <br/>
+                       
+
+                        <p style="text-align: justify;">
+                            17. CLAUSULA DE CONFIDENCIALIDAD. El EMPLEADO(A), por este acto se obliga a mantener la confidencialidad de toda la información a que tenga acceso, producto del desempeño de sus funciones y de cualquier otra actividad que se derive de su puesto de trabajo.  En caso que El EMPLEADO(A) se retire de GÜIP por cualquier motivo y preste sus servicios a otro patrón, instituciones financieras o no, se compromete a mantener el precepto de confidencialidad y le queda terminantemente prohibido, divulgar información verbal o escrita o sustraer documentos de trabajo, CD, Videos, o bases de datos que son de uso exclusivo de GÜIP.
+                                La violación de ésta Clausula, dará lugar a que se aplique la sanción de despido y facultará a GÜIP a ejercer las acciones judiciales que corresponda a título de indemnización daños y perjuicios y su aplicación sobrevive a la duración del Contrato de Trabajo suscrito entre las partes.
+                                Ambas partes manifestamos ser ciertas las anteriores declaraciones y por ser ello lo convenido, 
+                                las aceptamos en todos sus términos obligándonos a estar y pasar por cuanto se deja dicho.  
+                                En fe de lo cual, firmamos el presente contrato por duplicado, 
+                                recibiendo una copia GÜIP y otra El EMPLEADO(A) en la ciudad de Tegucigalpa el <span t-field="o.date_start"/>.
+                        </p>
+
+                       <br/>
+                       <br/>
+                       <br/>
+                       <br/>
+                        <br/>
+                       <br/>
+                        <br/>
+                       <br/>
+                       <br/>
+                        <br/>
+                       <br/>
+
+                        <table class="text-center w3-table w3-striped w3-bordered">
+                            <tr class="text-center">
+                                <th> <div style="width: 100px;"> </div> </th>
+                                <th style=" font-family:courier,arial,helvética; width: 260px; border-top: 2px solid black;">José Manuel Caceres S.</th>
+                                <th> <div style="width: 100px;"> </div> </th>
+                                <th style="width: 260px; border-top: 2px solid black;">
+                                    <span t-field="o.employee_id.name"/>
+                                </th>
+                            </tr>
+                        </table>
+
+
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <h2 style="text-align: center;">
+                            <span>ANEXO 1</span>
+                        </h2>
+                        <br/>   
+                        <br/>
+                        <br/> 
+
+                        <p style="text-align: left;" >
+                            <p>
+                                Nombre: <span t-field="o.employee_id.name"/> 
+                            </p>
+                            
+                            <p>
+                                Posición: <span t-field="o.job_id"/>
+                            </p>
+                            
+                            <p>
+                                Salario: <span t-field="o.wage"/>
+                            </p>
+                            
+                            <p>
+                                <t t-if ="o.txt_gerencia">
+                                     No. de salarios: 15
+                                </t>
+                                <t t-else="">
+                                     No. de salarios: 14
+                                </t>
+                               
+                            </p>
+                            
+                            <p>
+                                Bonificación: Sujeto a Metas y KPI´s
+                            </p>
+                            
+                            <p>
+                                Comunicación: (Asignación si se requiere)
+                            </p>
+                            
+                            <p>
+                                Viajes: Gastos de viaje y, asignación por depreciación y combustible si son en vehículo propio.
+                            </p>
+                            
+                            <p>
+                                Beneficios de Ley
+                            </p>
+                        </p>  
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        
+                        <table class="text-center w3-table w3-striped w3-bordered">
+                            <tr class="text-center">
+                                <th> <div style="width: 100px;"> </div> </th>
+                                <th style=" font-family:courier,arial,helvética; width: 260px; border-top: 2px solid black;">José Manuel Caceres S.</th>
+                                <th> <div style="width: 100px;"> </div> </th>
+                                <th style="width: 260px; border-top: 2px solid black;">
+                                    <span t-field="o.employee_id.name"/>
+                                </th>
+                            </tr>
+                        </table>
+                       
+
+                       
+
+                    </div> <!--ULTIMO DIV PAGE-->
+                </t>
+            </t>       
+     
+    </t>
+</template>
+</odoo>
